@@ -1,0 +1,177 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Umami — Guía de uso y preguntas frecuentes</title>
+<link rel="icon" href="umami-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+.gh{display:flex;gap:36px;align-items:center;flex-wrap:wrap;justify-content:center;padding:52px 0 20px}
+.gh .txt{flex:1;min-width:280px}
+.gh h1{font-family:'Fraunces',serif;font-size:44px;color:var(--green);font-weight:600;letter-spacing:-1px}
+.gh p{font-size:18px;color:var(--ink2);margin-top:14px;max-width:440px}
+.phone{flex:0 0 200px}
+svg.i{width:26px;height:26px;fill:none;stroke:#2D5A3D;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0 6px}
+.tabc{text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 6px}
+.tabc .b{width:44px;height:44px;border-radius:50%;background:#EDF4F0;display:flex;align-items:center;justify-content:center;margin:0 auto 8px}
+.tabc b{font-size:13px;color:var(--green);font-family:'Fraunces',serif;display:block}
+.tabc span{font-size:11px;color:var(--muted);line-height:1.3;display:block;margin-top:2px}
+.task{padding:26px 0;border-top:1px solid var(--line)}
+.task h2{margin-bottom:4px}
+.task .lead2{color:var(--ink2);margin-bottom:6px}
+.howto{counter-reset:s;list-style:none;margin:14px 0}
+.howto li{counter-increment:s;position:relative;padding:9px 0 9px 42px;color:var(--ink2);border-bottom:1px solid var(--line)}
+.howto li:last-child{border-bottom:none}
+.howto li:before{content:counter(s);position:absolute;left:0;top:8px;width:27px;height:27px;border-radius:50%;background:var(--green);color:#fff;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif}
+.howto b{color:var(--ink)}
+.note{background:#FBF4EC;border-left:3px solid var(--terra);border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:14.5px;color:var(--ink2)}
+.chipx{display:inline-block;background:#EDF4F0;border:1px solid var(--line);border-radius:20px;padding:1px 10px;font-size:13px;color:var(--green);font-weight:600;white-space:nowrap}
+.colors span{display:inline-flex;align-items:center;gap:7px;margin:5px 14px 5px 0;font-size:14px;color:var(--ink2)}
+.dot{width:13px;height:13px;border-radius:50%;display:inline-block}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--paper);overflow:hidden}
+summary{padding:15px 18px;cursor:pointer;font-family:'Fraunces',serif;font-size:16px;color:var(--ink);list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:18px;color:var(--terra);font-size:20px}
+details[open] summary:after{content:"–"}
+details[open] summary{border-bottom:1px solid var(--line)}
+details .a{padding:12px 18px;color:var(--ink2)}
+@media(max-width:620px){.tabs{grid-template-columns:repeat(2,1fr)}.gh h1{font-size:36px}}
+</style></head><body>
+<header class="nav"><a class="brand" href="index.html"><img src="umami-logo.png" alt="">Umami</a>
+<nav class="links"><a href="guia.html">Guía</a><a href="donaciones.html">Apoyar</a><a href="inversion.html">Invertí</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a></nav></header>
+
+<div class="gh">
+  <div class="txt"><span class="kick">Guía de uso</span>
+    <h1>Cómo usar Umami, paso a paso</h1>
+    <p>Una guía simple para arrancar. Te mostramos dónde está cada cosa y qué tocar en cada momento — sin apuro.</p>
+  </div>
+  <svg class="phone" viewBox="0 0 200 400" width="196" height="392" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pantalla Inicio de Umami">
+<rect x="6" y="4" width="188" height="392" rx="30" fill="#FFFDF8" stroke="#2D5A3D" stroke-width="3"/>
+<rect x="72" y="15" width="56" height="7" rx="3.5" fill="#E7E0D2"/>
+<circle cx="30" cy="52" r="11" fill="#E07A3F"/><path d="M25 55c2-4 8-4 10 0" stroke="#F8F5EE" stroke-width="2" fill="none"/><path d="M30 46c1 2-1 3 0 5" stroke="#F8F5EE" stroke-width="2" fill="none"/>
+<rect x="48" y="48" width="46" height="8" rx="4" fill="#2D5A3D"/>
+<path d="M170 48c-2-2-6 0-4 3l4 4 4-4c2-3-2-5-4-3z" fill="none" stroke="#2D5A3D" stroke-width="2"/>
+<rect x="20" y="86" width="64" height="6" rx="3" fill="#E07A3F"/>
+<rect x="20" y="100" width="150" height="11" rx="5" fill="#1A3040"/><rect x="20" y="117" width="104" height="11" rx="5" fill="#1A3040"/>
+<rect x="20" y="140" width="50" height="18" rx="9" fill="#D0E8E4"/><rect x="76" y="140" width="58" height="18" rx="9" fill="#FAF0DC"/>
+<rect x="20" y="172" width="26" height="6" rx="3" fill="#7A9088"/>
+<rect x="20" y="184" width="38" height="38" rx="8" fill="#D6E8D0"/><rect x="62" y="184" width="38" height="38" rx="8" fill="#FAF0DC"/><rect x="104" y="184" width="38" height="38" rx="8" fill="#CFE4E2"/><rect x="146" y="184" width="34" height="38" rx="8" fill="#F7D9C4"/>
+<rect x="20" y="300" width="160" height="42" rx="21" fill="#E07A3F"/><rect x="62" y="316" width="76" height="10" rx="5" fill="#1A3040"/>
+<rect x="66" y="356" width="68" height="7" rx="3.5" fill="#7A9088"/>
+</svg>
+</div>
+<div class="wrap">
+
+  <section class="task" style="border-top:none">
+    <span class="kick">Lo primero</span>
+    <h2>La barra de abajo: tus 5 lugares</h2>
+    <p class="lead2">Toda la app se maneja desde las 5 pestañas de abajo. Tocá cada una para moverte.</p>
+    <div class="tabs">
+      <div class="tabc"><div class="b"><svg class="i" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z"/></svg></div><b>Inicio</b><span>Qué cocinar hoy</span></div>
+      <div class="tabc"><div class="b"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="3" x2="8" y2="6"/><line x1="16" y1="3" x2="16" y2="6"/></svg></div><b>Plan</b><span>Armar el menú</span></div>
+      <div class="tabc"><div class="b"><svg class="i" viewBox="0 0 24 24"><path d="M5 4a2 2 0 0 1 2-2h11v18H7a2 2 0 0 0-2 2z"/><line x1="9" y1="7" x2="15" y2="7"/></svg></div><b>Recetas</b><span>Buscar y guardar</span></div>
+      <div class="tabc"><div class="b"><svg class="i" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><line x1="6" y1="10" x2="18" y2="10"/><line x1="9" y1="6" x2="9" y2="8"/><line x1="9" y1="13" x2="9" y2="15"/></svg></div><b>Despensa</b><span>Stock y compras</span></div>
+      <div class="tabc"><div class="b"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5.5 20c0-3.6 2.9-5.6 6.5-5.6s6.5 2 6.5 5.6"/></svg></div><b>Perfil</b><span>Tu familia</span></div>
+    </div>
+    <div class="note">La primera vez, Umami te pregunta <b>"¿De dónde sos?"</b>. Elegí tu país y tocá <span class="chipx">Listo</span> — sirve para sugerirte recetas de tu cocina.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Paso 1 · empezá por acá</span>
+    <h2>Cargá a tu familia</h2>
+    <p class="lead2">Umami cocina mejor si sabe quiénes comen y qué les gusta.</p>
+    <ol class="howto">
+      <li>Tocá <b>Perfil</b> abajo a la derecha (el ícono de persona).</li>
+      <li>Tocá el botón <span class="chipx">Agregar</span> abajo.</li>
+      <li>Escribí el <b>Nombre</b> y, si querés, la edad.</li>
+      <li>En <b>Porción</b>, elegí <span class="chipx">Niño</span> o <span class="chipx">Adulto</span> (o un número mayor si come bastante).</li>
+      <li>Elegí el <b>Tipo de dieta</b> (omnívoro, vegetariano, vegano…) y marcá las <b>Alergias</b> que tenga.</li>
+      <li>Para gustos: en <b>"Gustos (ingredientes)"</b> tocá <span class="chipx">Agregar</span>, buscá el ingrediente y elegilo. Después tocá el <b>pulgar</b>: 👍 pone <b>"Le gusta"</b>, 👎 pone <b>"No le gusta"</b>.</li>
+      <li>Tocá <span class="chipx">Guardar cambios</span> arriba.</li>
+    </ol>
+    <div class="note">Repetí para cada persona de la casa. Umami ajusta las porciones y evita lo que no les gusta o les cae mal.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Paso 2</span>
+    <h2>Armá el menú</h2>
+    <ol class="howto">
+      <li>Tocá <b>Plan</b> abajo (el calendario).</li>
+      <li>Elegí el período: <span class="chipx">Semana</span>, <span class="chipx">Mes</span> o <span class="chipx">Rango</span>.</li>
+      <li>Marcá qué comidas querés (Desayuno, Almuerzo, Merienda, Cena, Postre).</li>
+      <li>Si querés, elegí un <b>modo</b>: Rápido, Económico, Vegetariano, Fit, Tradicional… (se pueden combinar).</li>
+      <li>Tocá el botón grande <span class="chipx">Armar semana</span> (o mes/rango).</li>
+      <li>¿No te gusta una comida? Tocá <span class="chipx">Cambiar</span> y elegí otra. Para sacarla, <span class="chipx">Quitar</span>.</li>
+      <li>Cuando estés conforme, tocá <span class="chipx">Agendar semana</span> abajo.</li>
+    </ol>
+    <div class="note">Al agendar, Umami arma <b>solo</b> tu lista de compras con lo que falta. No tenés que hacerla a mano.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Paso 3</span>
+    <h2>Comprá lo justo</h2>
+    <ol class="howto">
+      <li>Tocá <b>Despensa</b> abajo, y arriba tocá el botón <span class="chipx">Compras</span>.</li>
+      <li>La lista viene ordenada por góndola. <b>Tocá cada cosa</b> que vas poniendo en el carrito para tacharla.</li>
+      <li>¿Querés mandarla? Tocá el ícono de <b>compartir</b> arriba para enviarla por WhatsApp.</li>
+      <li>Si algo dice <b>"Revisar manualmente"</b>, tocalo y corregí el ingrediente o la cantidad.</li>
+    </ol>
+  </section>
+
+  <section class="task">
+    <span class="kick">Paso 4</span>
+    <h2>Guardá lo que tenés en casa (tu stock)</h2>
+    <ol class="howto">
+      <li>Tocá <b>Despensa</b> abajo, y arriba tocá <span class="chipx">Mi Stock</span>.</li>
+      <li>Tocá el <b>+</b> abajo, buscá el ingrediente y elegilo.</li>
+      <li>Poné la <b>cantidad</b>, la <b>unidad</b> y, si sabés, el <b>vencimiento</b> y dónde lo guardás (heladera, freezer, alacena).</li>
+      <li>Tocá <span class="chipx">Agregar al stock</span>.</li>
+    </ol>
+    <p style="margin-top:8px">Los colores te avisan de un vistazo:</p>
+    <p class="colors">
+      <span><i class="dot" style="background:#4A7C59"></i> Verde: disponible</span>
+      <span><i class="dot" style="background:#E8A23D"></i> Mostaza: por vencer (usalo pronto)</span>
+      <span><i class="dot" style="background:#CC4E30"></i> Rojo: vencido</span>
+    </p>
+    <div class="note">Cuando cocinás, Umami descuenta solo del stock lo que usaste. Así siempre sabés qué te queda.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Paso 5</span>
+    <h2>Cociná sin estrés</h2>
+    <ol class="howto">
+      <li>Desde <b>Inicio</b>, tocá <span class="chipx">Empezar a cocinar</span> en la receta sugerida. (También podés entrar a cualquier receta y tocar <span class="chipx">Comenzar Preparación</span>.)</li>
+      <li>Seguí los pasos con letra grande. Tocá <span class="chipx">Siguiente</span> para avanzar y <span class="chipx">Anterior</span> para volver.</li>
+      <li>En el último paso tocá <span class="chipx">Finalizar</span>.</li>
+      <li>Umami te muestra qué descontar del stock: tocá <span class="chipx">Confirmar y descontar</span>.</li>
+      <li>Al final te pide <b>calificar</b> la receta con estrellas ⭐ (o tocá "Saltar").</li>
+    </ol>
+    <div class="note">En <b>Inicio</b>, si una receta no te convence, tocá <span class="chipx">Dar vuelta la carta</span> y te propone otra.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Y además</span>
+    <h2>Otras cosas útiles</h2>
+    <ol class="howto">
+      <li><b>Guardar una receta:</b> tocá el <b>corazón</b> ❤️. Las ves después en Recetas → Guardadas.</li>
+      <li><b>Tus propias recetas:</b> Recetas → <b>Mis recetas</b> → <b>Crear receta</b>. Después, en Plan, activá <b>"Incluir mis recetas creadas"</b>.</li>
+      <li><b>El calendario:</b> en Plan tocá <span class="chipx">Calendario</span>. Podés ver el mes, exportarlo en <b>PDF</b> o compartirlo por WhatsApp, y marcar comidas como hechas.</li>
+      <li><b>Días especiales e invitados:</b> en el Calendario, el menú <b>⋮</b> te deja marcar un día especial o sumar invitados para ese día.</li>
+    </ol>
+    <div class="note"><b>"Selección Umami"</b> con una llamita 🔥 son nuestras recetas recomendadas, las más logradas.</div>
+  </section>
+
+  <section class="task">
+    <span class="kick">Preguntas frecuentes</span>
+    <h2>FAQ</h2>
+    <details><summary>¿Umami es gratis?</summary><div class="a">Sí. Hoy está todo desbloqueado y sin publicidad. Si te sirve, podés <a href="donaciones.html">apoyar el proyecto</a> con una donación voluntaria — no desbloquea nada extra, ya está todo disponible.</div></details>
+    <details><summary>¿Necesito internet?</summary><div class="a">No. Umami funciona sin conexión; tus datos viven en tu dispositivo.</div></details>
+    <details><summary>¿Qué hacen con mis datos?</summary><div class="a">Lo personal se queda en tu teléfono y <strong>no vendemos tus datos</strong>. Ver la <a href="privacidad.html">Política de Privacidad</a>.</div></details>
+    <details><summary>¿Sirve para vegetarianos o sin TACC?</summary><div class="a">Sí. Cargá la dieta y las alergias de cada persona en <b>Perfil</b> y Umami filtra. Es orientativo: ante una alergia, verificá siempre los ingredientes.</div></details>
+    <details><summary>¿La info nutricional y de alérgenos es exacta?</summary><div class="a">Es orientativa, para ayudarte a decidir — no reemplaza el criterio médico ni la lectura de las etiquetas.</div></details>
+    <details><summary>¿Está en iPhone?</summary><div class="a">Por ahora Umami sale en Android. La versión para iPhone se evalúa más adelante.</div></details>
+    <details><summary>¿Olvidé cómo cargar un gusto?</summary><div class="a">Perfil → tocá el comensal (o Agregar) → sección "Gustos (ingredientes)" → Agregar → buscá el ingrediente → tocá el pulgar para poner "Le gusta" 👍 o "No le gusta" 👎.</div></details>
+    <details><summary>¿Cómo apoyo el proyecto?</summary><div class="a">Con una donación en la página de <a href="donaciones.html">Apoyar</a>. Es voluntario y ayuda a que Umami siga gratis y sin publicidad.</div></details>
+    <details><summary>¿Tenés otra duda?</summary><div class="a">Escribinos a <a href="mailto:umnami.app@gmail.com">umnami.app@gmail.com</a>.</div></details>
+  </section>
+</div><footer><div><a href="index.html">Inicio</a> · <a href="guia.html">Guía</a> · <a href="donaciones.html">Apoyar</a> · <a href="inversion.html">Invertí</a> · <a href="privacidad.html">Privacidad</a> · <a href="terminos.html">Términos</a></div>
+<p style="margin-top:12px">Umami — la cocina de tu casa, planificada · <a href="mailto:umnami.app@gmail.com">umnami.app@gmail.com</a></p></footer></body></html>
